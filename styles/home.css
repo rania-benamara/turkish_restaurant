@@ -23,6 +23,7 @@ html,body{
 body{
   background-color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
 }
 
 .header{
@@ -132,9 +133,7 @@ body{
   cursor: pointer;
 }
 
-.top-right button:hover{
-  opacity: 0.7;
-}
+
 .top-right-menu-btn {
   background-color: #FCA311;
 }
@@ -247,9 +246,6 @@ body{
   cursor: pointer;
 }
 
-.about-us-content2 button:hover{
-  opacity: 0.7;
-}
 
 /*-------Menu--------*/
 .menu{
@@ -319,6 +315,73 @@ body{
 .menu-dish .second-p{
   color: var(--secondary-color);
 }
+
+
+.meaning-taste{
+  position: relative;
+  margin-top: 10rem;
+  margin-left: 30px;
+}
+
+.meaning-taste .taste-img1{
+  width: 170px;
+  height: 170px;
+  border-radius: 90px;
+  transform: rotate(80deg);
+  position: absolute;
+  left: 50px;
+  top: -14rem;
+  opacity: 0.4;
+}
+
+.meaning-taste-content{
+  display: flex;
+  gap: 3rem;
+  margin-top: 24rem;
+  font-family: 'Roboto',sans-serif;
+  font-size: 30px;
+}
+
+
+.meaning-taste-content h1{
+  font-size: 45px;
+  margin-bottom: 2rem;
+}
+
+.meaning-taste-content button{
+  margin-top: 3rem;
+  font-size: 25px;
+  border-radius: 25px;
+  padding: 10px 30px 10px 30px;
+}
+
+.meaning-taste-content1{
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.taste-img3{
+  width: 170px;
+  height: 170px;
+  border-radius: 90px;
+  position: absolute;
+  right: 15rem;
+  bottom: -15rem;
+  opacity: 0.4;
+}
+
+.taste-img4{
+  width: 210px;
+  height: 210px;
+  border-radius: 100px;
+  transform: rotate(30deg);
+  position: absolute;
+  left: 0;
+  bottom: -15rem;
+  opacity: 0.4;
+}
 /*-------------------------------------*/
 /*Icons*/
 .icons{
@@ -348,6 +411,10 @@ img{
 
 h1{
   font-family: 'Righteous', sans-serif;
+}
+
+button:hover{
+  opacity: 0.7;
 }
 /*--Media querry----*/
 @media (max-width:700px){
@@ -384,7 +451,8 @@ h1{
   
   .top-right h1{
     font-size: 55px;
-    
   }
   
+
+
 }
