@@ -180,8 +180,16 @@ body{
   padding-bottom: 2rem;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 }
 
+
+.dish-content:hover{
+  
+  overflow: hidden;
+  transform: scale(1.1);
+  
+}
 .dish-content h3{
   margin-left: 25%;
 }
@@ -437,6 +445,39 @@ body{
 
 .costumer-1 p{
   margin-left:1rem;
+}
+
+/*------Footer-----*/
+footer{
+  width: 100%;
+  margin-top: 7rem;
+  background-color: black;
+  color: var(--primary-color);
+}
+
+.footer{
+  display: flex;
+  margin-left: 30px;
+  gap: 8%;
+}
+
+.footer ul li{
+  padding: 5px;
+}
+
+.footer-head{
+  margin-bottom:19px ;
+  margin-top: 10px;
+}
+.footer-logo{
+  max-width: 200px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.copyright-text{
+  margin-top: 2rem;
+  margin-left: 35%;
 }
 /*-------------------------------------*/
 /*Icons*/
