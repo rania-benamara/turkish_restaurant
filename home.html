@@ -22,32 +22,48 @@
       
       </div>
       <div class="nav-bar">
+        <ul class="navLinks">
+          <li onclick=hideSidebar()><i class="fa fa-times"  ></i></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      
+
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
+          
+          <li class="hideOnMobile"><a href="home.html">Home</a></li>
+          <li class="hideOnMobile"><a href="#about-us">About</a></li>
+          <li class="hideOnMobile"><a href="#menu">Menu</a></li>
+          
         </ul>
       </div>
   
       <div class="social-media-icons">
         <ul>
-          <li><a href="#"><i class="fa-brands fa-instagram icons"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-facebook icons"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-location-dot icons"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-phone icons"></i></a></li>
+          <li class="menu-btn" onclick=showSidebar()><i class="fa fa-bars menu-fa nav-icon"  style="color: #E5E5E5;"></i></li>
+          <li><a href="https://www.instagram.com/maison_istanbul_montreal/?hl=en"><i class="fa-brands fa-instagram icons"></i></a></li>
+          <li><a href="https://www.facebook.com/p/Maison-Istanbul-100063484245813/"><i class="fa-brands fa-facebook icons"></i></a></li>
+          <li><a href="https://www.google.com/maps/dir//6878+Rue+Jean-Talon+E,+Saint-L%C3%A9onard,+QC+H1S+1N1/@45.5956072,-73.6531734,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc91e617bb75c3f:0x99fe93b5c64b531d!2m2!1d-"><i class="fa-solid fa-location-dot icons"></i></a></li>
+          <li><a href="tel:+1234567890"><i class="fa-solid fa-phone icons"></i></a></li>
+          
         </ul>
+        
       </div>
-      <i class="fa fa-bars menu-fa" onclick="showMenu()"></i>
+      
     </header>
     
+
+
+
     <div class="top">
       <div class="top-right">
           <img src="images/baklawa.jpeg" alt="baklawa" class="top-img">
           <p class="first-p">Maison</p>
           <h1>ISTANBUL</h1>
           <p>Welcome to Maison Istanbul ,where you can enjoy original & delicious Turkish food.Explore our menu and indulge in dishes expertly prepared by our talented chefs.</p>
-          <button class="top-right-menu-btn">Menu</button>
-          <button class="top-right-drinks-btn">Drinks</button>
+          <a href="#menu"><button class="top-right-menu-btn">Menu</button></a>
+          <a href="#drinks"><button class="top-right-drinks-btn">Drinks</button></a>
         </div>
   
       <div class="top-left">
@@ -55,6 +71,9 @@
       </div>
     </div>
   </section>
+
+
+
   
   <section class="popular-dishes">
     <h1>Popular Dishes</h1>
@@ -110,7 +129,7 @@
     </div>
   </section>
   
-  <section class="about-us">
+  <section id="about-us" class="about-us">
     <img src="images/kunefe.jpeg" alt="kunefe" class="about-us-img">
     <div class="about-us-div">
       <div class="about-us-content1">
@@ -431,21 +450,24 @@
 
         <li><p>Delicious Food With Maison Istanbul</p></li>
         <li><p>Follow Our Social Media</p></li>
-        <li><a href="#"><i class="fa-brands fa-instagram icons"></i></a><a href="#">&nbsp;&nbsp;<i class="fa-brands fa-facebook icons"></i></a></li>
+        <li><a href="https://www.instagram.com/maison_istanbul_montreal/?hl=en"><i class="fa-brands fa-instagram icons"></i></a><a href="https://www.facebook.com/p/Maison-Istanbul-100063484245813/">&nbsp;&nbsp;<i class="fa-brands fa-facebook icons"></i></a></li>
         
       </ul>
 
       <ul>
         <li class="footer-head"><p>Get In Touch</p></li>
-        <li><i class="fa-solid fa-location-dot icons"></i> &nbsp; &nbsp;6878 Rue Jean-Talon E, St, QC H1S 1N1</li>
+        <li><i class="fa-solid fa-location-dot icons"></i> &nbsp; &nbsp;<a href="https://www.google.com/maps/dir//6878+Rue+Jean-Talon+E,+Saint-L%C3%A9onard,+QC+H1S+1N1/@45.5956072,-73.6531734,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc91e617bb75c3f:0x99fe93b5c64b531d!2m2!1d-">
+          6878 Rue Jean-Talon E, St, QC H1S 1N1
 
-        <li><i class="fa-solid fa-phone icons"></i>&nbsp; &nbsp;(514)543-5430</li>
+        </a></li>
+
+        <li><i class="fa-solid fa-phone icons"></i>&nbsp; &nbsp;<a href="tel:+1234567890">(514)543-5430</a></li>
       </ul>
 
       <ul>
         <li class="footer-head">Features</li>
-        <li>Home</li>
-        <li>Menu</li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#menu"><li>Menu</li></a></li>
       </ul>
 
       <ul>

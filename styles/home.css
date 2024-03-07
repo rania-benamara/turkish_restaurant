@@ -3,7 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/*Colors variables*/
+/*----Colors variables----*/
+
+/*-----------------------*/
 :root{
   --primary-color: #E5E5E5
   ;
@@ -64,6 +66,38 @@ body{
   width: 100%;
 }
 
+
+.menu-btn{
+  display: none;
+}
+.nav-bar ul li:first-child{
+  margin-right: auto
+}
+
+.navLinks{
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  background-color: rgba(131, 129, 129, 0.527);
+  height: 100vh;
+  width: 250px;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  align-items: flex-start;
+  justify-content: flex-start;  
+  backdrop-filter: blur(12px);
+}
+.navLinks ul li{
+  width: 100%;
+}
+
+
+.navLinks i{
+  left: 0;
+  z-index: 2;
+}
+
 .social-media-icons ul{
   gap: 32px;
   z-index: 3;
@@ -72,6 +106,8 @@ body{
 .social-media-icons ul li i{
   color: var(--primary-color);
 }
+
+
 
 .top-showcase{
   position: relative;
@@ -154,8 +190,10 @@ body{
 
 }
 
-/*--------------------------------------*/
-/*---Popular dishes---*/
+
+/*---Popular dishes-------*/
+
+/*-----------------------*/
 
 .popular-dishes{
   margin-top: 5rem;
@@ -180,8 +218,14 @@ body{
   padding-bottom: 2rem;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
 }
+
+.animate {
+  transform: translateY(0);
+}
+
 
 
 .dish-content:hover{
@@ -199,6 +243,9 @@ body{
 
 
 /*-------About us ---------*/
+
+/*-----------------------*/
+
 .about-us{
   position: relative;
   margin-top: 20rem;
@@ -255,7 +302,10 @@ body{
 }
 
 
-/*-------Menu--------*/
+/*----------Menu----------*/
+
+/*-----------------------*/
+
 .menu{
   margin-top: 16rem;
 }
@@ -324,6 +374,9 @@ body{
   color: var(--secondary-color);
 }
 
+/*-----Meaning Taste-----*/
+
+/*-----------------------*/
 
 .meaning-taste{
   position: relative;
@@ -479,6 +532,10 @@ footer{
   margin-top: 2rem;
   margin-left: 35%;
 }
+
+.footer a{
+  color: var(--primary-color);
+}
 /*-------------------------------------*/
 /*Icons*/
 .icons{
@@ -514,19 +571,50 @@ button:hover{
   opacity: 0.7;
 }
 /*--Media querry----*/
-@media (max-width:700px){
-  .top-left {
-   width: 49%;
-   height: 48%;
+@media (max-width:800px){
+
+  /*---header---*/
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-btn{
+    display: block;
+    z-index: 2;
   }
 
+.social-media-icons{
+  position: relative;
+  z-index: 1;
+}
+.social-media-icons ul{
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  position: absolute;
+  left: 4rem;
+  top: 0rem;
+}
+
+
+
+
+/*-----------------------*/
+  .top-left {
+  
+   height: 48%;
+  }
+  
+ 
   .top-img{
-    display: none;
+    /*display: none;*/
+    width: 70px;
+    height: 70px;
   }
 
   .top{
     display: flex;
     flex-direction: row;
+
     
   }
 
@@ -535,7 +623,7 @@ button:hover{
     top: 50%;
     left: 30px;
     height: 50%;
-    width: 49%;
+    width: 98%;
   }
   
   .first-p{
@@ -550,6 +638,85 @@ button:hover{
     font-size: 55px;
   }
   
+  /*------Popular dishes-----*/
+
+  .dishes-container{
+    
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /*----About Us----*/
+
+  .about-us-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-img{
+    width: 130px;
+    height: 130px;
+    right: 5rem;
+    bottom:  0rem;  
+  }
+
+  /*------Menu----------*/
+
+  .menu-list ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+  }
+
+  .menu-list{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  /*---Meaning taste----*/
+
+  .meaning-taste-content{
+    flex-direction: column;
+  }
+
+  .taste-img2{
+    width: 70%;
+  }
+
+  .taste-img3{
+    width: 100px;
+    height: 100px;
+    right: 10rem;
+    
+  }
+  
+  .taste-img4{
+    width: 100px;
+    height: 100px;
+  }
+
+  /*----Costumers----*/
+
+  .costumer-1{
+    padding: 20px;
+    margin-top: 40%;
+  }
+
+  .costumers h1{
+    margin-left: 28%;
+    font-size: 30px;
+    top: 15rem;
+  }
+  
+  
+  .costumer-1 .face img{
+     margin-left: 30%;
+  }
+}
 
 
+@media (max-width:450px){
+  .social-media-icons ul{
+    gap: 1rem;
+    left: 0rem;
+   
+  }
 }
