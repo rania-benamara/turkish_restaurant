@@ -74,7 +74,7 @@ body{
   margin-right: auto
 }
 
-.navLinks{
+.nav-bar .navLinks{
   display: none;
   position: fixed;
   flex-direction: column;
@@ -537,6 +537,14 @@ footer{
   color: var(--primary-color);
 }
 /*-------------------------------------*/
+
+.show{
+  display: block !important;
+}
+
+#menu-1-content,#menu-2-content,#menu-3-content,#menu-4-content,#menu-5-content,#menu-6-content,#menu-7-content,#menu-8-content{
+  display: none;
+}
 /*Icons*/
 .icons{
   color: var(--secondary-color);
@@ -579,7 +587,7 @@ button:hover{
   }
   .menu-btn{
     display: block;
-    z-index: 2;
+   
   }
 
 .social-media-icons{
