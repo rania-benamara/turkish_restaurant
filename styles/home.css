@@ -190,6 +190,17 @@ body{
 
 }
 
+.top-left img{
+  animation: top-left-img;
+  animation-timeline: view();
+  animation-range: exit;
+  opacity: 0.9;
+}
+
+@keyframes top-left-img {
+  25% {opacity: 1;}
+  85%, 100% {opacity: 0;scale: 1.5;}
+}
 
 /*---Popular dishes-------*/
 
@@ -220,8 +231,17 @@ body{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s ease-in-out;
   position: relative;
+  scale: .5;opacity: 0;
+  animation: dish-content-animation ease-out ;
+  animation-timeline: view();
+ 
+  animation-delay: 2s;
 }
 
+
+@keyframes dish-content-animation {
+  to{scale: 1;opacity: 1;}
+}
 .animate {
   transform: translateY(0);
 }
@@ -232,6 +252,7 @@ body{
   
   overflow: hidden;
   transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   
 }
 .dish-content h3{
