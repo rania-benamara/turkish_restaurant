@@ -742,10 +742,77 @@ button:hover{
 }
 
 
-@media (max-width:450px){
-  .social-media-icons ul{
-    gap: 1rem;
-    left: 0rem;
-   
+@media (max-width:600px){
+
+  .social-media-icons ul{    
+    left: 4rem;
   }
+
+  .menu-list ul {
+    font-size: 8px;
+  }
+
+  .menu-list{
+    gap: 1rem;
+  }
+  
+  .menu .menu-list h1{
+    font-size: 10px;
+  }
+
+  .dish-content >div{
+    gap: 1rem;
+  }
+
+  .menu-dish{
+    width: 12rem;
+  }
+
+  .dish-content{
+    width: 12rem;
+  }
+
+  .about-us .about-us-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 22rem;
+    bottom:  27rem;
+    opacity: 0.4;
+  }
+  
+  .about-us-content1 img{
+    width: 180px;
+  }
+
+  .top-right img {
+    display: none;
+  }
+
+  
+  .costumers h1{
+    margin-left: 30%;
+    font-size: 20px;
+    top: 5rem;
+  }
+  .costumers-content{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .costumer-1{
+  
+    padding: 8px;
+    border-radius: 18px;
+    margin-top: 35%;
+    font-size: 19px;
+  }
+  
+  .costumer-2{
+    margin-top: 0;
+  }
+ 
 }
