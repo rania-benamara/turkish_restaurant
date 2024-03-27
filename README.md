@@ -32,6 +32,7 @@ Turkish Restaurant is a fictional restaurant known for its delicious Turkish cui
 
   <details>
     <summary><h3> 📸 - Demo Images </h3></summary>
+    #
     ![Screenshot 2024-03-26 at 10 21 03 PM](https://github.com/rania-benamara/turkish_restaurant/assets/157039485/169e25c3-c091-4f6b-a130-57d4049a3509)
 
   </details>
