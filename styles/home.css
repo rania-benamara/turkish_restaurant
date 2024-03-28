@@ -603,7 +603,7 @@ button:hover{
   opacity: 0.7;
 }
 /*--Media querry----*/
-@media only screen and (max-width:800px){
+@media (max-width:800px){
 
   /*---header---*/
   .hideOnMobile{
@@ -745,7 +745,7 @@ button:hover{
 }
 
 
-@media only screen and (max-width:600px){
+@media (max-width:600px){
 
   .social-media-icons ul{    
     left: 4rem;
@@ -820,9 +820,12 @@ button:hover{
  
 }
 
-@media (max-width:460px){
+
+ 
+
+ @media (max-width:460px){
   .social-media-icons ul{    
-    left: 0;
+    right: 50%;
   }
   
   .social-media-icons ul li{    
@@ -832,7 +835,7 @@ button:hover{
   .logo a img{
     max-width: 140px;
     height: 40px;
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .top{
@@ -842,7 +845,7 @@ button:hover{
   }
   
   .top-right{
-    left: 0px;
+    left: 10px;
     width: 100%;
   }
   
@@ -867,12 +870,12 @@ button:hover{
   
   .popular-dishes h1{
     margin-bottom: 39px;
-    margin-left: 0px;
+    margin-left: 10px;
   }
   
   .dishes-container{
     gap: 2%;
-    margin-left: 0px;
+    margin-left: 30px;
   }
 
   .dish-content{
@@ -884,25 +887,25 @@ button:hover{
   }
   
   .about-us-img{
-    width: 170px;
-    height: 170px;
+    width: 130px;
+    height: 130px;
     border-radius: 90px;
     transform: rotate(-45deg);
     position: absolute;
-    right: 22rem;
-    bottom:  27rem;
+    right: 30rem;
+    bottom:  30rem;
     opacity: 0.4;
   }
   
   
   .about-us-content1{
     
-    margin-left: 0px;
+    margin-left: 10px;
   }
   
   .about-us-content2{
     width: 100%;
-    margin-left: 0rem;
+    margin-left: 10px;
   }
   
   .about-us-content2 p{
@@ -915,13 +918,13 @@ button:hover{
   }
   
   .menu-list h1{
-    margin-left: 0px;
-    font-size: 15px;
+    margin-left: 10px;
+    font-size: 10px;
   }
   
   .menu-list ul {
-    gap: 0.3rem;
-    font-size: 7px;
+    gap: 0.5rem;
+    font-size: 10px;
   }
 
   .costumers{
@@ -962,4 +965,5 @@ button:hover{
     margin-left: 15%;
     font-size: 10px;
   }
+}
 }
